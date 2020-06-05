@@ -32,9 +32,18 @@
     <dimen name="padding_horizontal_xxsmall">4dp</dimen>
     <dimen name="padding_horizontal_xxxsmall">2dp</dimen>
 
-    <dimen name="toolbarHeight">?attr/actionBarSize</dimen>
+    <dimen name="toolbarHeight">56dp</dimen>
     <dimen name="tabHeight">48dp</dimen>
     <dimen name="tabHeight_large">56dp</dimen>
 
     <dimen name="cardHeight">72dp</dimen>
+
+    <dimen name="corner_radius_large">24dp</dimen>
+    <dimen name="corner_radius">16dp</dimen>
+    <dimen name="corner_small">8dp</dimen>
+    <dimen name="corner_x_small">4dp</dimen>
+
+    <dimen name="elevation">8dp</dimen>
+    <dimen name="elevation_small">4dp</dimen>
+    <dimen name="elevation_xsmall">2dp</dimen>
 </resources>

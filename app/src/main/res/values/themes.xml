@@ -11,11 +11,11 @@
     </style>
 
     <style name="AppThemePrimary" parent="AppThemeDayNight">
-        <item name="colorPrimary">@color/brandRed</item>
+        <item name="colorPrimary">@color/red</item>
         <item name="colorOnPrimary">@color/textHighEmphasisSecondary</item>
-        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorPrimaryDark">@color/titleBackground</item>
 
-        <item name="controlBackground">@color/brandRed</item>
+        <item name="controlBackground">@color/red</item>
 
         <item name="colorSecondary">@color/titleBackground</item>
         <item name="colorOnSurface">@color/textHighEmphasis</item>
@@ -28,36 +28,40 @@
         <item name="colorOnBackground">@color/textHighEmphasis</item>
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:textColorPrimary">@color/textHighEmphasisSecondary</item>
-        <item name="colorAccent">@color/brandRed</item>
+        <item name="colorAccent">@color/textHighEmphasisSecondary</item>
         <item name="android:windowContentTransitions">true</item>
-        <item name="android:colorAccent">@color/brandRed</item>
+        <item name="android:colorAccent">@color/textHighEmphasisSecondary</item>
         <!--        <item name="android:fontFamily">@font/quicksand_bold</item>-->
         <item name="toolbarColor">@color/background</item>
         <item name="textHighEmphasis">@color/textHighEmphasis</item>
         <item name="textHighEmphasisSecondary">@color/textHighEmphasisSecondary</item>
         <item name="textHighEmphasisInverse">@color/textHighEmphasisInverse</item>
         <item name="textMediumEmphasis">@color/textMediumEmphasis</item>
+        <item name="textMediumEmphasisSecondary">@color/textMediumEmphasisSecondary</item>
 
-        <item name="textAppearanceButton">@style/TextAppearance.14.Light</item>
-        <item name="textAppearanceCaption">@style/TextAppearance.12.Light</item>
+        <item name="textAppearanceButton">@style/TextAppearance.14.Regular</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.12.Regular</item>
 
         <item name="textInputStyle">@style/TextInputLayoutAppearance</item>
         <item name="materialButtonStyle">@style/FilledButton</item>
         <item name="floatingActionButtonStyle">@style/FloatingActionButton</item>
         <item name="dialogTheme">@style/Dialog</item>
+        <item name="toolbarStyle">@style/Toolbar.Popup</item>
         <item name="alertDialogStyle">@style/Dialog</item>
         <item name="android:dialogTheme">@style/Dialog</item>
     </style>
 
-    <style name="SplashTheme" parent="AppThemeDayNight">
+    <style name="SplashTheme" parent="AppThemePrimary">
         <item name="android:windowBackground">@color/black</item>
         <item name="colorPrimaryDark">@color/black</item>
         <item name="android:colorBackground">@color/black</item>
         <item name="colorOnBackground">@color/textHighEmphasisSecondary</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
     </style>
 
     <style name="AppThemeDayNight" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:windowLightStatusBar" tools:targetApi="m">@bool/lightStatusBar</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">
             @bool/lightNavigationBar
         </item>

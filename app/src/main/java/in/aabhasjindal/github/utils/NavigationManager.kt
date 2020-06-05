@@ -1,11 +1,27 @@
 package `in`.aabhasjindal.github.utils
 
+import `in`.aabhasjindal.github.data.model.User
+import `in`.aabhasjindal.github.ui.dashboard.DashBoardActivity
+import `in`.aabhasjindal.github.ui.search.SearchActivity
 import android.app.Activity
 import android.content.Context
 import android.content.ContextWrapper
 import android.content.Intent
 import android.os.Bundle
 
+fun Activity.navigateToDashBoardActivity(user: User) {
+    launchActivity<DashBoardActivity> {
+        putExtra(Constants.IntentConstants.USER, user)
+    }
+}
+
+fun Activity.navigateToSearchActivity(text: String? = null) {
+    launchActivity<SearchActivity>(Constants.IntentConstants.SEARCH_REQUEST) {
+        text?.let { it ->
+            putExtra(Constants.IntentConstants.SEARCH_TEXT, it)
+        }
+    }
+}
 
 inline fun <reified T : ContextWrapper> Activity.launchActivity(
     requestCode: Int = -1,

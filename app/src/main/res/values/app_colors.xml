@@ -4,12 +4,13 @@
     <color name="textHighEmphasisInverse">@color/white</color>
     <color name="textHighEmphasisSecondary">@color/white</color>
     <color name="textMediumEmphasis">@color/black_31_opcacity</color>
+    <color name="textMediumEmphasisSecondary">@color/white_59_opcacity</color>
 
-    <color name="brandRed">@color/app_color_red_light</color>
-    <color name="brandRedSecondary">@color/app_color_red_secondary_light</color>
-    <color name="brandYellow">@color/app_color_yellow_light</color>
-    <color name="brandGreen">@color/app_color_green_light</color>
-    <color name="brandBlue">@color/app_color_blue_light</color>
+    <color name="red">@color/app_color_red_light</color>
+    <color name="redSecondary">@color/app_color_red_secondary_light</color>
+    <color name="yellow">@color/app_color_yellow_light</color>
+    <color name="green">@color/app_color_green_light</color>
+    <color name="blue">@color/app_color_blue_light</color>
 
     <color name="progressBarSecondaryStart">@color/progress_bar_secondary_start_light</color>
     <color name="progressBarSecondaryEnd">@color/progress_bar_secondary_end_light</color>
@@ -18,7 +19,7 @@
 
     <color name="background">@color/background_light</color>
     <color name="cardBackground">@color/card_background_light</color>
-    <color name="titleBackground">@color/title_background_light</color>
+    <color name="titleBackground">@color/title_background_dark</color>
 
     <color name="IconTint">@color/icon_tint_light</color>
     <color name="hourglassTint">@color/hourglass_tint_light</color>

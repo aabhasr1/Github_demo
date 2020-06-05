@@ -1,123 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="TextAppearance.12.Light" parent="TextAppearance.AppCompat.Caption">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_light</item>
-    </style>
-
     <style name="TextAppearance.12.Regular" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
-    </style>
-
-    <style name="TextAppearance.12.Medium" parent="TextAppearance.AppCompat.Caption">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.12.Bold" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_bold</item>
-    </style>
-
-    <style name="TextAppearance.14.Light" parent="TextAppearance.AppCompat">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_light</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.14.Regular" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
-    </style>
-
-    <style name="TextAppearance.14.Medium" parent="TextAppearance.AppCompat">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.14.Bold" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_bold</item>
-    </style>
-
-    <style name="TextAppearance.16.Light" parent="TextAppearance.AppCompat.Menu">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_light</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.16.Regular" parent="TextAppearance.AppCompat.Menu">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
-    </style>
-
-    <style name="TextAppearance.16.Medium" parent="TextAppearance.AppCompat.Menu">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.16.Bold" parent="TextAppearance.AppCompat.Menu">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_bold</item>
-    </style>
-
-    <style name="TextAppearance.18.Light" parent="TextAppearance.AppCompat.Medium">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_light</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.18.Regular" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
-    </style>
-
-    <style name="TextAppearance.18.Medium" parent="TextAppearance.AppCompat.Medium">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.18.Bold" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_bold</item>
-    </style>
-
-    <style name="TextAppearance.22.Light" parent="TextAppearance.AppCompat.Large">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_light</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.22.Regular" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
-    </style>
-
-    <style name="TextAppearance.22.Medium" parent="TextAppearance.AppCompat.Large">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.22.Bold" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_bold</item>
-    </style>
-
-    <style name="TextAppearance.24.Light" parent="TextAppearance.AppCompat.Headline">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_light</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.24.Regular" parent="TextAppearance.AppCompat.Headline">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
-    </style>
-
-    <style name="TextAppearance.24.Medium" parent="TextAppearance.AppCompat.Headline">
-        <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 
     <style name="TextAppearance.24.Bold" parent="TextAppearance.AppCompat.Headline">
         <item name="android:textColor">@color/textHighEmphasis</item>
-        <item name="android:fontFamily">@font/sf_pro_text_bold</item>
+        <item name="android:fontFamily">@font/noto_serif</item>
     </style>
 </resources>

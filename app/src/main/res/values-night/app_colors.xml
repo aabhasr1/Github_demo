@@ -5,11 +5,11 @@
     <color name="textHighEmphasisSecondary">@color/white_db</color>
     <color name="textMediumEmphasis">@color/white_59_opcacity</color>
 
-    <color name="brandRed">@color/app_color_red_dark</color>
-    <color name="brandRedSecondary">@color/app_color_red_secondary_dark</color>
-    <color name="brandYellow">@color/app_color_yellow_dark</color>
-    <color name="brandGreen">@color/app_color_green_dark</color>
-    <color name="brandBlue">@color/app_color_blue_dark</color>
+    <color name="red">@color/app_color_red_dark</color>
+    <color name="redSecondary">@color/app_color_red_secondary_dark</color>
+    <color name="yellow">@color/app_color_yellow_dark</color>
+    <color name="green">@color/app_color_green_dark</color>
+    <color name="blue">@color/app_color_blue_dark</color>
 
     <color name="progressBarSecondaryStart">@color/progress_bar_secondary_start_dark</color>
     <color name="progressBarSecondaryEnd">@color/progress_bar_secondary_end_dark</color>

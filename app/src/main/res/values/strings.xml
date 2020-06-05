@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">GitHub</string>
+    <string name="github">GitHub</string>
+    <string name="demo">Demo</string>
+    <string name="by_aabhas_jindal">By Aabhas Jindal</string>
+    <string name="github_icon">github icon</string>
+    <string name="search">search</string>
+    <string name="enter_github_username">Enter github username...</string>
+    <string name="back_action">back action</string>
+    <string name="clear_search">clear search</string>
+    <string name="no_user">No user found</string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
 </resources>

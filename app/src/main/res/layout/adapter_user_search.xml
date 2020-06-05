@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="in.aabhasjindal.github.ui.search.SearchViewModel" />
+
+        <variable
+            name="item"
+            type="in.aabhasjindal.github.data.model.User" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="@{item.clickable}"
+        android:onClick="@{model.onUserSelect(item)}"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_horizontal"
+            app:imageUrl="@{item.photo}"
+            tools:src="@drawable/noimage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_horizontal"
+            android:text="@{item.name}"
+            android:textAppearance="@style/TextAppearance.18.Regular"
+            tools:text="aabhasr1" />
+    </LinearLayout>
+</layout>

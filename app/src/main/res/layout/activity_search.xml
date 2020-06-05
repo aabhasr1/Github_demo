@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="in.aabhasjindal.github.ui.search.SearchViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbarHeight"
+            android:background="@color/titleBackground"
+            android:elevation="@dimen/elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back_action"
+            android:elevation="@dimen/elevation"
+            android:padding="@dimen/padding_horizontal"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/view" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/search_entry"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/textHighEmphasisSecondary"
+            android:elevation="@dimen/elevation"
+            android:hint="@string/enter_github_username"
+            android:paddingStart="@dimen/padding_horizontal"
+            android:paddingEnd="@dimen/padding_horizontal"
+            android:text="@={model.searchString}"
+            android:textColor="@color/textHighEmphasisSecondary"
+            android:textColorHint="@color/textMediumEmphasisSecondary"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toStartOf="@+id/search_action"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            tools:text="aabhasr1" />
+
+        <ImageView
+            android:id="@+id/search_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/clear_search"
+            android:elevation="@dimen/elevation"
+            android:padding="@dimen/padding_horizontal"
+            android:src="@drawable/ic_close_white_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/search_entry"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:configurationWithAdapter="@{model.configuration}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:recyclerItems="@{model.searchList}"
+            tools:itemCount="4"
+            tools:listitem="@layout/adapter_user_search" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

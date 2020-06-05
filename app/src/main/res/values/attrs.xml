@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textHighEmphasis" format="color" />
+    <attr name="textHighEmphasisSecondary" format="color" />
+    <attr name="textHighEmphasisInverse" format="color" />
+    <attr name="textMediumEmphasis" format="color" />
+    <attr name="textMediumEmphasisSecondary" format="color" />
+
+    <attr name="lightStatusBar" format="boolean" />
+    <attr name="lightNavigationBar" format="boolean" />
+
+    <attr name="toolbarColor" format="color" />
+</resources>

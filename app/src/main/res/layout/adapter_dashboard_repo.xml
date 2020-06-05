@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="in.aabhasjindal.github.ui.dashboard.DashBoardViewModel" />
+
+        <variable
+            name="item"
+            type="in.aabhasjindal.github.data.model.Repo" />
+
+        <import type="android.text.TextUtils" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_horizontal_xsmall"
+        android:onClick="@{model.onRepoClick(item)}"
+        app:cardCornerRadius="@dimen/corner_small"
+        app:cardElevation="@dimen/elevation_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{item.name}"
+                android:textAppearance="@style/TextAppearance.18.Bold"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="android-otpview-pinview" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_vertical_xsmall"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{item.description}"
+                android:textAppearance="@style/TextAppearance.14.Regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:text="A custom view to enter otp of different sizes used usually in cases of authentication." />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="@dimen/margin_vertical"
+                android:background="@drawable/bg_round"
+                android:visibility="@{TextUtils.isEmpty(item.language)? View.GONE: View.VISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_horizontal_xsmall"
+                android:text="@{item.language}"
+                android:textAppearance="@style/TextAppearance.12.Bold"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintStart_toEndOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2"
+                tools:text="Kotlin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
