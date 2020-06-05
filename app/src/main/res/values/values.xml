@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_vertical_xxlarge">40dp</dimen>
+    <dimen name="margin_vertical_xlarge">32dp</dimen>
+    <dimen name="margin_vertical_large">24dp</dimen>
+    <dimen name="margin_vertical">16dp</dimen>
+    <dimen name="margin_vertical_small">12dp</dimen>
+    <dimen name="margin_vertical_xsmall">8dp</dimen>
+    <dimen name="margin_vertical_xxsmall">4dp</dimen>
+    <dimen name="margin_horizontal_xxlarge">40dp</dimen>
+    <dimen name="margin_horizontal_xlarge">32dp</dimen>
+    <dimen name="margin_horizontal_large">24dp</dimen>
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="margin_horizontal_small">16dp</dimen>
+    <dimen name="margin_horizontal_xsmall">8dp</dimen>
+    <dimen name="margin_horizontal_xxsmall">4dp</dimen>
+    <dimen name="margin_horizontal_xxxsmall">2dp</dimen>
+
+    <dimen name="padding_vertical_xxlarge">40dp</dimen>
+    <dimen name="padding_vertical_xlarge">32dp</dimen>
+    <dimen name="padding_vertical_large">24dp</dimen>
+    <dimen name="padding_vertical">16dp</dimen>
+    <dimen name="padding_vertical_small">12dp</dimen>
+    <dimen name="padding_vertical_xsmall">8dp</dimen>
+    <dimen name="padding_vertical_xxsmall">4dp</dimen>
+    <dimen name="padding_horizontal_xxlarge">40dp</dimen>
+    <dimen name="padding_horizontal_xlarge">32dp</dimen>
+    <dimen name="padding_horizontal_large">24dp</dimen>
+    <dimen name="padding_horizontal">16dp</dimen>
+    <dimen name="padding_horizontal_small">16dp</dimen>
+    <dimen name="padding_horizontal_xsmall">8dp</dimen>
+    <dimen name="padding_horizontal_xxsmall">4dp</dimen>
+    <dimen name="padding_horizontal_xxxsmall">2dp</dimen>
+
+    <dimen name="toolbarHeight">?attr/actionBarSize</dimen>
+    <dimen name="tabHeight">48dp</dimen>
+    <dimen name="tabHeight_large">56dp</dimen>
+
+    <dimen name="cardHeight">72dp</dimen>
+</resources>

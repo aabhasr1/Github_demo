@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="lightStatusBar">false</bool>
+    <bool name="lightNavigationBar">false</bool>
+    <drawable name="toolbarBack">@drawable/ic_arrow_back_white_24dp</drawable>
+    <drawable name="toolbarBackSecondary">@drawable/ic_arrow_back_white_24dp</drawable>
+    <drawable name="toolbarClose">@drawable/ic_close_white_24dp</drawable>
+</resources>

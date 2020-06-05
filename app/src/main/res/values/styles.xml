@@ -1,0 +1,168 @@
+<resources>
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/selector_bg_button</item>
+        <item name="android:textColor">@color/selector_bg_button</item>
+        <item name="iconTint">@color/selector_bg_button</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="rippleColor">@color/app_color_red_light_16_opacity</item>
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="android:textAppearance">@style/TextAppearance.14.Regular</item>
+    </style>
+
+    <style name="FilledButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.14.Regular</item>
+        <item name="android:paddingStart">48dp</item>
+        <item name="android:paddingEnd">48dp</item>
+        <item name="cornerRadius">22dp</item>
+    </style>
+
+    <style name="FilledButton.Error" parent="Widget.MaterialComponents.Button">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.14.Medium</item>
+        <item name="android:paddingStart">48dp</item>
+        <item name="android:paddingEnd">48dp</item>
+        <item name="cornerRadius">22dp</item>
+        <item name="backgroundTint">@color/errorBtnColor</item>
+        <item name="rippleColor">@color/bg_error_btn</item>
+        <item name="android:textColor">@color/textHighEmphasisSecondary</item>
+    </style>
+
+    <style name="FilledButton.White" parent="Widget.MaterialComponents.Button">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.14.Regular</item>
+        <item name="android:paddingStart">48dp</item>
+        <item name="android:paddingEnd">48dp</item>
+        <item name="rippleColor">@color/app_color_red_light_16_opacity</item>
+        <item name="cornerRadius">22dp</item>
+        <item name="strokeColor">@color/buttonStroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="backgroundTint">@color/background</item>
+        <item name="android:textColor">@color/brandRed</item>
+    </style>
+
+    <style name="TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/selector_bg_button</item>
+        <item name="iconTint">@color/selector_bg_button</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="rippleColor">@color/app_color_red_light_16_opacity</item>
+        <item name="android:textAppearance">@style/TextAppearance.14.Regular</item>
+        <item name="backgroundTint">@color/transparent</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/brandRed</item>
+        <item name="android:textAppearance">@style/TextAppearance.14.Medium</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/textMediumEmphasis</item>
+        <item name="android:textAppearance">@style/TextAppearance.14.Medium</item>
+    </style>
+
+    <style name="Dialog" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="colorPrimary">@color/brandRed</item>
+        <item name="colorOnPrimary">@color/textHighEmphasisSecondary</item>
+        <item name="colorPrimaryDark">@color/background</item>
+
+        <item name="colorSecondary">@color/titleBackground</item>
+        <item name="colorOnSurface">@color/textHighEmphasis</item>
+
+        <item name="android:colorBackground">@color/dialogBackground</item>
+        <item name="colorOnBackground">@color/textHighEmphasis</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:textColorPrimary">@color/textHighEmphasisSecondary</item>
+        <item name="colorAccent">@color/brandYellow</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:colorAccent">@color/brandYellow</item>
+        <item name="textHighEmphasis">@color/textHighEmphasis</item>
+        <item name="textHighEmphasisSecondary">@color/textHighEmphasisSecondary</item>
+        <item name="textHighEmphasisInverse">@color/textHighEmphasisInverse</item>
+        <item name="textMediumEmphasis">@color/textMediumEmphasis</item>
+
+        <item name="textAppearanceButton">@style/TextAppearance.14.Medium</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.12.Regular</item>
+
+        <item name="textInputStyle">@style/TextInputLayoutAppearance</item>
+        <item name="materialButtonStyle">@style/FilledButton</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="dialogCornerRadius">@dimen/radius_normal</item>
+    </style>
+
+
+    <style name="TextInputLayoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- reference our hint & error styles -->
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="android:textColor">@color/textHighEmphasis</item>
+        <item name="android:textColorHint">@color/textHighEmphasis</item>
+        <item name="android:textAppearance">@style/TextAppearance.14.Medium</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/brandRed</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxStrokeColor">@color/mtrl_outline_stroke_color</item>
+    </style>
+
+    <style name="RightSideAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="Toolbar.Right" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:elevation">2dp</item>
+        <item name="navigationIcon">@drawable/toolbarBack</item>
+        <!--        <item name="android:background">?colorBackgroundFloating</item>-->
+        <item name="android:background">@color/background</item>
+        <item name="titleTextColor">@color/textHighEmphasis</item>
+    </style>
+
+    <style name="Toolbar.Secondary.Right" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:elevation">2dp</item>
+        <item name="navigationIcon">@drawable/toolbarBackSecondary</item>
+        <item name="android:background">@color/brandRedSecondary</item>
+        <item name="titleTextColor">@color/textHighEmphasisSecondary</item>
+    </style>
+
+    <style name="Toolbar.Popup" parent="Widget.MaterialComponents.Toolbar">
+        <item name="navigationIcon">@drawable/toolbarClose</item>
+        <item name="android:elevation">2dp</item>
+
+        <!--        <item name="android:background">?colorBackgroundFloating</item>-->
+        <item name="android:background">@color/background</item>
+        <item name="titleTextColor">@color/textHighEmphasis</item>
+    </style>
+
+    <style name="Toolbar.NoNavigation" parent="Widget.MaterialComponents.Toolbar">
+        <item name="navigationIcon">@null</item>
+        <item name="android:elevation">4dp</item>
+        <!--        <item name="android:background">?colorBackgroundFloating</item>-->
+        <item name="android:background">@color/background</item>
+        <item name="titleTextColor">@color/textHighEmphasis</item>
+    </style>
+
+    <style name="FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="tint">@null</item>
+        <item name="backgroundTint">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="PotFulAlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/brandRed</item>
+        <item name="colorPrimaryDark">@color/brandRed</item>
+    </style>
+
+    <style name="LowerCaseMenuTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

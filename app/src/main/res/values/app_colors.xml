@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textHighEmphasis">@color/black</color>
+    <color name="textHighEmphasisInverse">@color/white</color>
+    <color name="textHighEmphasisSecondary">@color/white</color>
+    <color name="textMediumEmphasis">@color/black_31_opcacity</color>
+
+    <color name="brandRed">@color/app_color_red_light</color>
+    <color name="brandRedSecondary">@color/app_color_red_secondary_light</color>
+    <color name="brandYellow">@color/app_color_yellow_light</color>
+    <color name="brandGreen">@color/app_color_green_light</color>
+    <color name="brandBlue">@color/app_color_blue_light</color>
+
+    <color name="progressBarSecondaryStart">@color/progress_bar_secondary_start_light</color>
+    <color name="progressBarSecondaryEnd">@color/progress_bar_secondary_end_light</color>
+
+    <color name="divider">@color/divider_light</color>
+
+    <color name="background">@color/background_light</color>
+    <color name="cardBackground">@color/card_background_light</color>
+    <color name="titleBackground">@color/title_background_light</color>
+
+    <color name="IconTint">@color/icon_tint_light</color>
+    <color name="hourglassTint">@color/hourglass_tint_light</color>
+
+    <color name="itemSelected">@color/item_selected_dark</color>
+
+    <color name="dialogBackground">@color/dialog_background_light</color>
+    <color name="dialogDivider">@color/dialog_divider_light</color>
+    <color name="buttonStroke">@color/btn_stroke_light</color>
+
+    <color name="errorBtnColor">@color/error_btn_color_light</color>
+    <color name="menuText">@color/menu_text_light</color>
+</resources>
