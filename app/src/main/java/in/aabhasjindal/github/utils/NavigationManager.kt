@@ -1,12 +1,15 @@
 package `in`.aabhasjindal.github.utils
 
+import `in`.aabhasjindal.github.data.model.Repo
 import `in`.aabhasjindal.github.data.model.User
 import `in`.aabhasjindal.github.ui.dashboard.DashBoardActivity
+import `in`.aabhasjindal.github.ui.pullrequest.PRActivity
 import `in`.aabhasjindal.github.ui.search.SearchActivity
 import android.app.Activity
 import android.content.Context
 import android.content.ContextWrapper
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 
 fun Activity.navigateToDashBoardActivity(user: User) {
@@ -21,6 +24,18 @@ fun Activity.navigateToSearchActivity(text: String? = null) {
             putExtra(Constants.IntentConstants.SEARCH_TEXT, it)
         }
     }
+}
+
+fun Activity.navigateToPullRequests(repo: Repo) {
+    launchActivity<PRActivity> {
+        putExtra(Constants.IntentConstants.REPO, repo)
+    }
+}
+
+fun Activity.openURL(url: String) {
+    val i = Intent(Intent.ACTION_VIEW)
+    i.data = Uri.parse(url)
+    startActivity(i)
 }
 
 inline fun <reified T : ContextWrapper> Activity.launchActivity(

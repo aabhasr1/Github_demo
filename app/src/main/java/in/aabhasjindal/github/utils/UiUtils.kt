@@ -1,5 +1,6 @@
 package `in`.aabhasjindal.github.utils
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Handler
 import android.os.Looper
@@ -8,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.google.android.material.snackbar.Snackbar
+import java.text.SimpleDateFormat
+import java.util.*
 
 object UiUtils {
     fun showToast(context: Context, message: String) {
@@ -50,5 +53,21 @@ object UiUtils {
 
     fun runOnUiThread(runnable: () -> Unit) {
         Handler(Looper.getMainLooper()).post { runnable() }
+    }
+
+
+    @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
+    @SuppressLint("SimpleDateFormat")
+    fun convertToNewFormat(dateStr: String?): String {
+        return try {
+            val utc: TimeZone = TimeZone.getTimeZone("UTC")
+            val sourceFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'")
+            val destFormat = SimpleDateFormat("dd MMM yy", Locale.getDefault())
+            sourceFormat.timeZone = utc
+            val convertedDate: Date = sourceFormat.parse(dateStr)
+            destFormat.format(convertedDate)
+        } catch (_: Exception) {
+            "N/A"
+        }
     }
 }

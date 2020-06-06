@@ -21,16 +21,26 @@ class DashBoardViewModel : BaseViewModel<DashBoardEvents>() {
             layoutManager = GridLayoutManager(event.parentContext, 2)
         }
     }
+    val loading = ObservableField(false)
+    val noRepos = ObservableField(false)
 
     fun onRepoClick(item: Repo) = View.OnClickListener {
-
+        event.onRepoSelect(item)
     }
 
     fun fetchRepos(name: String) {
+        loading.set(true)
         launchIO {
             userRepository.fetchRepositories(name).execute({
-                repoList.set(it)
+                loading.set(false)
+                if (it.isNotEmpty()) {
+                    repoList.set(it)
+                    noRepos.set(false)
+                } else {
+                    noRepos.set(true)
+                }
             }, {
+                loading.set(false)
                 event.onGeneralError(it)
             })
         }

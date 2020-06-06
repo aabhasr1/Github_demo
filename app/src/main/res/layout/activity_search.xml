@@ -8,6 +8,8 @@
         <variable
             name="model"
             type="in.aabhasjindal.github.ui.search.SearchViewModel" />
+
+        <import type="android.view.View" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -46,6 +48,7 @@
             android:hint="@string/enter_github_username"
             android:paddingStart="@dimen/padding_horizontal"
             android:paddingEnd="@dimen/padding_horizontal"
+            android:singleLine="true"
             android:text="@={model.searchString}"
             android:textColor="@color/textHighEmphasisSecondary"
             android:textColorHint="@color/textMediumEmphasisSecondary"
@@ -78,6 +81,16 @@
             app:recyclerItems="@{model.searchList}"
             tools:itemCount="4"
             tools:listitem="@layout/adapter_user_search" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_horizontal"
+            android:indeterminateTint="@color/textHighEmphasis"
+            android:visibility="@{model.loading? View.VISIBLE: View.GONE}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

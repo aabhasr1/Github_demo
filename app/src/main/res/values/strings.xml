@@ -11,4 +11,6 @@
     <string name="no_user">No user found</string>
     <string name="open">Open</string>
     <string name="closed">Closed</string>
+    <string name="no_pull_requests">No Pull Requests</string>
+    <string name="no_repositories_found">No repositories found</string>
 </resources>

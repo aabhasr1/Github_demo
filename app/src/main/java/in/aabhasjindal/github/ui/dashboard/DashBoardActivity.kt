@@ -2,10 +2,12 @@ package `in`.aabhasjindal.github.ui.dashboard
 
 import `in`.aabhasjindal.github.R
 import `in`.aabhasjindal.github.binding.BindingUtil.onImageSet
+import `in`.aabhasjindal.github.data.model.Repo
 import `in`.aabhasjindal.github.data.model.User
 import `in`.aabhasjindal.github.databinding.ActivityDashboardBinding
 import `in`.aabhasjindal.github.ui.base.BaseActivity
 import `in`.aabhasjindal.github.utils.Constants
+import `in`.aabhasjindal.github.utils.navigateToPullRequests
 import `in`.aabhasjindal.github.utils.navigateToSearchActivity
 import android.app.Activity
 import android.content.Intent
@@ -34,8 +36,9 @@ class DashBoardActivity : BaseActivity(), DashBoardEvents {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.search) {
-            onSearchSelected()
+        when (item.itemId) {
+            R.id.search -> onSearchSelected()
+            android.R.id.home -> onBackPressed()
         }
         return super.onOptionsItemSelected(item)
     }
@@ -61,6 +64,12 @@ class DashBoardActivity : BaseActivity(), DashBoardEvents {
         binding.profilePic.onImageSet(user.photo)
         binding.title.text = user.name
         model.fetchRepos(user.name)
+    }
+
+    override fun onRepoSelect(repo: Repo) {
+        runOnUiThread {
+            navigateToPullRequests(repo)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

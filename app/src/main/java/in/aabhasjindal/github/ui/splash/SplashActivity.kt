@@ -17,6 +17,7 @@ class SplashActivity : BaseActivity() {
     override fun initUi(savedInstanceState: Bundle?) {
         binding.linearLayout.postDelayed({
             navigateToSearchActivity(null)
+            finish()
         }, 2000)
     }
 

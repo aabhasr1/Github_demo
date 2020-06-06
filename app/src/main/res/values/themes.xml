@@ -11,17 +11,14 @@
     </style>
 
     <style name="AppThemePrimary" parent="AppThemeDayNight">
-        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimary">@color/green</item>
         <item name="colorOnPrimary">@color/textHighEmphasisSecondary</item>
         <item name="colorPrimaryDark">@color/titleBackground</item>
 
-        <item name="controlBackground">@color/red</item>
+        <item name="controlBackground">@color/green</item>
 
         <item name="colorSecondary">@color/titleBackground</item>
         <item name="colorOnSurface">@color/textHighEmphasis</item>
-        <item name="android:autofilledHighlight" tools:targetApi="o">
-            @drawable/bg_autofill_highlight
-        </item>
         <item name="android:actionMenuTextColor">@color/menuText</item>
 
         <item name="android:colorBackground">@color/background</item>

@@ -29,6 +29,7 @@ class SearchViewModel : BaseViewModel<SearchEvents>() {
             itemDecoration = SeparatorDecoration(event.parentContext, R.color.divider, 1f)
         }
     }
+    val loading = ObservableField(false)
 
     fun setSearchHandler(searchText: AppCompatEditText, searchAction: ImageView) {
         val clickListener = View.OnClickListener {
@@ -42,6 +43,7 @@ class SearchViewModel : BaseViewModel<SearchEvents>() {
             override fun onSearchTextEmpty() {
                 searchAction.setOnClickListener(null)
                 searchAction.setImageDrawable(null)
+                loading.set(false)
                 searchList.set(emptyList())
             }
 
@@ -56,6 +58,7 @@ class SearchViewModel : BaseViewModel<SearchEvents>() {
 
             override fun onSearchTextGoneInvalid() {
                 job?.cancel()
+                loading.set(false)
                 searchList.set(emptyList())
             }
         })
@@ -63,6 +66,7 @@ class SearchViewModel : BaseViewModel<SearchEvents>() {
 
     private fun fetchAndDisplaySuggestions(searchString: String): Job? {
         return launchIO {
+            loading.set(true)
             searchRepository.searchUser(searchString).execute({ list ->
                 if (list.isNotEmpty()) {
                     searchList.set(list)
@@ -78,7 +82,9 @@ class SearchViewModel : BaseViewModel<SearchEvents>() {
                         )
                     )
                 }
+                loading.set(false)
             }, {
+                loading.set(false)
                 event.onGeneralError(it)
             })
         }

@@ -8,6 +8,8 @@
         <variable
             name="model"
             type="in.aabhasjindal.github.ui.dashboard.DashBoardViewModel" />
+
+        <import type="android.view.View" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -52,6 +54,28 @@
             tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:listitem="@layout/adapter_dashboard_repo"
             tools:spanCount="2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:indeterminateTint="@color/textHighEmphasis"
+            android:visibility="@{model.loading? View.VISIBLE: View.GONE}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_horizontal"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:text="@string/no_repositories_found"
+            android:textAppearance="@style/TextAppearance.18.Bold"
+            android:visibility="@{model.noRepos? View.VISIBLE: View.GONE}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -26,7 +26,10 @@
             android:theme="@style/AppThemePrimary.Right" />
         <activity
             android:name=".ui.dashboard.DashBoardActivity"
-            android:theme="@style/AppThemePrimary.NoNavigation" />
+            android:theme="@style/AppThemePrimary.Right" />
+        <activity
+            android:name=".ui.pullrequest.PRActivity"
+            android:theme="@style/AppThemePrimary.Right" />
     </application>
 
 </manifest>
