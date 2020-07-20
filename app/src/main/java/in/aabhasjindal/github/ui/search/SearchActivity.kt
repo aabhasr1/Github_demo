@@ -10,6 +10,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import org.koin.core.inject
+import timber.log.Timber
 
 class SearchActivity : BaseActivity(), SearchEvents {
     private val model: SearchViewModel by inject()
@@ -36,6 +37,41 @@ class SearchActivity : BaseActivity(), SearchEvents {
             binding.imageView.visibility = View.INVISIBLE
         }
         model.setSearchHandler(binding.searchEntry, binding.searchAction)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Timber.d("lifecycle onCreate")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Timber.d("lifecycle onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Timber.d("lifecycle onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Timber.d("lifecycle onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Timber.d("lifecycle onStop")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Timber.d("lifecycle onRestart")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.d("lifecycle onDestroy")
     }
 
     override fun initUi(savedInstanceState: Bundle?) {

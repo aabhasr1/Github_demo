@@ -31,8 +31,10 @@ object SearchTextHandler {
                             job = viewModelScope.launch(Dispatchers.Main) {
                                 if (firedOnce)
                                     delay(debounceTime)  //debounce timeOut
-                                if (searchText != s.toString())
+                                if (searchText != s.toString()) {
+                                    searchTextListener.onSearchTextGoneInvalid()
                                     return@launch
+                                }
                                 firedOnce = true
                                 searchTextListener.onSearchValidText(s.toString())
                             }

@@ -16,6 +16,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import org.koin.core.inject
+import timber.log.Timber
 
 class DashBoardActivity : BaseActivity(), DashBoardEvents {
     private val model: DashBoardViewModel by inject()
@@ -48,6 +49,41 @@ class DashBoardActivity : BaseActivity(), DashBoardEvents {
         user?.let {
             setUser(it)
         }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Timber.d("lifecycle onCreate")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Timber.d("lifecycle onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Timber.d("lifecycle onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Timber.d("lifecycle onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Timber.d("lifecycle onStop")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Timber.d("lifecycle onRestart")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.d("lifecycle onDestroy")
     }
 
     private fun onSearchSelected() {
